@@ -1,0 +1,82 @@
+month,platform,campaign,impressions,clicks,spend,conversions,revenue,goal
+2026-01,Google Ads,Search - Brand,17217,1681,2377.14,133,21979.42,ecommerce
+2026-01,Google Ads,Search - Outdoor Lighting,47509,2143,5290.88,62,13782.91,ecommerce
+2026-01,Google Ads,Search - Water Filtration,34717,1275,3583.42,34,8475.69,ecommerce
+2026-01,Google Ads,Shopping - All Products,450323,5414,5541.09,101,19116.86,ecommerce
+2026-01,Google Ads,Search - Trade Program Leads,21137,744,2608.2,38,0.0,lead_gen
+2026-01,Microsoft Ads,Search - Brand,7353,533,562.82,39,6165.78,ecommerce
+2026-01,Microsoft Ads,Search - Nonbrand,27235,840,1602.73,18,3809.89,ecommerce
+2026-01,Meta,Prospecting - Smart Thermostats,285576,2826,3271.84,32,6664.59,ecommerce
+2026-01,Meta,Retargeting - Site Visitors,144981,1920,1770.66,53,8477.76,ecommerce
+2026-02,Google Ads,Search - Brand,19056,1834,2527.82,141,25396.27,ecommerce
+2026-02,Google Ads,Search - Outdoor Lighting,54827,2324,5561.2,73,15237.98,ecommerce
+2026-02,Google Ads,Search - Water Filtration,40946,1498,4274.68,38,9628.0,ecommerce
+2026-02,Google Ads,Shopping - All Products,616835,6558,5819.13,134,26069.36,ecommerce
+2026-02,Google Ads,Search - Trade Program Leads,22013,709,2586.08,36,0.0,lead_gen
+2026-02,Microsoft Ads,Search - Brand,7523,609,635.64,44,6604.48,ecommerce
+2026-02,Microsoft Ads,Search - Nonbrand,28416,877,1569.57,17,3429.77,ecommerce
+2026-02,Meta,Prospecting - Smart Thermostats,273262,2691,3110.49,29,5433.49,ecommerce
+2026-02,Meta,Retargeting - Site Visitors,147402,2020,1830.85,67,12057.6,ecommerce
+2026-03,Google Ads,Search - Brand,17232,1462,2208.16,108,18791.87,ecommerce
+2026-03,Google Ads,Search - Outdoor Lighting,48492,1996,5022.11,49,10460.27,ecommerce
+2026-03,Google Ads,Search - Water Filtration,32201,1255,3699.55,30,7861.15,ecommerce
+2026-03,Google Ads,Shopping - All Products,535643,6324,6080.14,103,17736.91,ecommerce
+2026-03,Google Ads,Search - Trade Program Leads,22799,758,3028.72,41,0.0,lead_gen
+2026-03,Microsoft Ads,Search - Brand,7092,533,628.73,45,7750.35,ecommerce
+2026-03,Microsoft Ads,Search - Nonbrand,29540,816,1531.06,15,3359.55,ecommerce
+2026-03,Meta,Prospecting - Smart Thermostats,294654,2523,3127.35,27,5366.58,ecommerce
+2026-03,Meta,Retargeting - Site Visitors,123760,1809,1629.77,47,7778.21,ecommerce
+2026-04,Google Ads,Search - Brand,17836,1642,2428.5,122,21810.29,ecommerce
+2026-04,Google Ads,Search - Outdoor Lighting,47503,2039,4892.14,56,10726.19,ecommerce
+2026-04,Google Ads,Search - Water Filtration,31643,1284,3647.48,28,6534.72,ecommerce
+2026-04,Google Ads,Shopping - All Products,566580,6428,6576.95,122,22951.16,ecommerce
+2026-04,Google Ads,Search - Trade Program Leads,23335,738,2598.59,49,0.0,lead_gen
+2026-04,Microsoft Ads,Search - Brand,7298,528,624.12,41,6536.69,ecommerce
+2026-04,Microsoft Ads,Search - Nonbrand,25760,850,1569.15,16,3310.24,ecommerce
+2026-04,Meta,Prospecting - Smart Thermostats,287161,2707,3456.42,28,5780.25,ecommerce
+2026-04,Meta,Retargeting - Site Visitors,136722,1985,1841.1,66,12407.24,ecommerce
+2026-05,Google Ads,Search - Brand,16676,1610,2360.23,131,22155.2,ecommerce
+2026-05,Google Ads,Search - Outdoor Lighting,41909,1927,5077.63,47,10145.18,ecommerce
+2026-05,Google Ads,Search - Water Filtration,33281,1392,4284.79,33,8292.3,ecommerce
+2026-05,Google Ads,Shopping - All Products,560862,6587,6198.76,103,20008.55,ecommerce
+2026-05,Google Ads,Search - Trade Program Leads,18814,656,2536.68,36,0.0,lead_gen
+2026-05,Microsoft Ads,Search - Brand,6928,567,623.8,47,7152.77,ecommerce
+2026-05,Microsoft Ads,Search - Nonbrand,23657,735,1353.39,14,2680.35,ecommerce
+2026-05,Meta,Prospecting - Smart Thermostats,325783,2898,3567.78,32,6024.05,ecommerce
+2026-05,Meta,Retargeting - Site Visitors,140658,1942,1756.41,63,11938.36,ecommerce
+2026-06,Google Ads,Search - Brand,20536,1879,2582.53,142,21725.12,ecommerce
+2026-06,Google Ads,Search - Outdoor Lighting,43312,2085,5715.96,62,14191.8,ecommerce
+2026-06,Google Ads,Search - Water Filtration,34237,1356,3725.9,31,7014.55,ecommerce
+2026-06,Google Ads,Shopping - All Products,619304,6804,6594.57,115,22717.95,ecommerce
+2026-06,Google Ads,Search - Trade Program Leads,25419,814,3069.94,41,0.0,lead_gen
+2026-06,Microsoft Ads,Search - Brand,7583,632,644.74,48,7386.67,ecommerce
+2026-06,Microsoft Ads,Search - Nonbrand,32536,905,1587.45,19,3524.76,ecommerce
+2026-06,Meta,Prospecting - Smart Thermostats,366190,3059,3517.58,26,5200.99,ecommerce
+2026-06,Meta,Retargeting - Site Visitors,120132,1734,1681.8,56,10698.58,ecommerce
+2026-07,Google Ads,Search - Brand,20848,1867,2488.56,134,19946.61,ecommerce
+2026-07,Google Ads,Search - Outdoor Lighting,57062,2403,6463.86,62,12618.31,ecommerce
+2026-07,Google Ads,Search - Water Filtration,34045,1393,4053.9,37,8690.88,ecommerce
+2026-07,Google Ads,Shopping - All Products,790339,7976,8070.2,162,31302.93,ecommerce
+2026-07,Google Ads,Search - Trade Program Leads,19147,687,2592.75,46,0.0,lead_gen
+2026-07,Microsoft Ads,Search - Brand,6111,526,585.22,42,7317.08,ecommerce
+2026-07,Microsoft Ads,Search - Nonbrand,27099,765,1489.11,17,3706.89,ecommerce
+2026-07,Meta,Prospecting - Smart Thermostats,322020,2732,3393.47,30,6412.18,ecommerce
+2026-07,Meta,Retargeting - Site Visitors,131495,1948,1862.3,55,10414.23,ecommerce
+2026-08,Google Ads,Search - Brand,22802,1881,2570.78,147,24499.01,ecommerce
+2026-08,Google Ads,Search - Outdoor Lighting,59574,2428,6300.81,74,14185.09,ecommerce
+2026-08,Google Ads,Search - Water Filtration,38883,1504,4133.89,40,8909.76,ecommerce
+2026-08,Google Ads,Shopping - All Products,595813,6847,6522.09,135,25920.91,ecommerce
+2026-08,Google Ads,Search - Trade Program Leads,21051,803,3049.62,42,0.0,lead_gen
+2026-08,Microsoft Ads,Search - Brand,6680,512,566.57,41,6742.2,ecommerce
+2026-08,Microsoft Ads,Search - Nonbrand,24736,751,1506.83,15,3001.95,ecommerce
+2026-08,Meta,Prospecting - Smart Thermostats,241420,2046,3527.87,22,4691.92,ecommerce
+2026-08,Meta,Retargeting - Site Visitors,99979,1316,1708.24,39,6829.33,ecommerce
+2026-09,Google Ads,Search - Brand,19228,1893,2450.51,152,24581.33,ecommerce
+2026-09,Google Ads,Search - Outdoor Lighting,46728,2099,5513.11,62,11889.6,ecommerce
+2026-09,Google Ads,Search - Water Filtration,31474,1374,3930.2,38,8699.05,ecommerce
+2026-09,Google Ads,Shopping - All Products,625662,6791,6067.26,133,26576.13,ecommerce
+2026-09,Google Ads,Search - Trade Program Leads,22990,755,2786.86,46,0.0,lead_gen
+2026-09,Microsoft Ads,Search - Brand,7446,629,651.03,40,6008.46,ecommerce
+2026-09,Microsoft Ads,Search - Nonbrand,25023,724,1418.18,15,3148.66,ecommerce
+2026-09,Meta,Prospecting - Smart Thermostats,293473,2442,3039.22,24,4446.52,ecommerce
+2026-09,Meta,Retargeting - Site Visitors,121030,1673,1597.23,48,8254.52,ecommerce
