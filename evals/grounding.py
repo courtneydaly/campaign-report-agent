@@ -11,6 +11,9 @@ Checks
                       for the total or for the platform named in the sentence.
 3. structure          all required section headings are present.
 4. period             no month other than the reporting / prior month is named.
+5. trend              no streak or multi-month trend claim ("third straight month",
+                      "continues to decline"). The KPI JSON covers two months, so
+                      these claims can't be grounded even when no month is named.
 
 Known limits (documented, not hidden)
 -------------------------------------
@@ -40,6 +43,22 @@ METRICS = [  # order matters: longer phrases first so "conversion rate" isn't re
     ("clicks", r"\bclicks\b"),
     ("impressions", r"\bimpressions\b"),
 ]
+_ORD = r"(?:second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|\d+(?:st|nd|rd|th))"
+_CNT = r"(?:two|three|four|five|six|seven|eight|nine|ten|several|multiple|\d+)"
+TREND_PATTERNS = [
+    rf"\b{_ORD}\s+(?:straight|consecutive|successive)\s+(?:month|quarter)\b",
+    rf"\b{_CNT}\s+(?:straight|consecutive|successive)\s+(?:months|quarters)\b",
+    rf"\b{_CNT}\s+months\s+in\s+a\s+row\b",
+    rf"\b(?:for|over)\s+(?:the\s+)?(?:past|last)\s+{_CNT}\s+months\b",
+    rf"\bfor\s+{_CNT}\s+months\b",
+    r"\bmonth\s+after\s+month\b",
+    r"\banother\s+month\s+of\b",
+    r"\bstreak\b",
+    r"\bcontinu\w*\s+to\s+(?:decline|fall|drop|slide|slip|rise|climb|grow|increase|decrease|improve|worsen)\b",
+    r"\bcontinu\w*\s+(?:its|the|a|an)\s+(?:\w+\s+){0,2}?(?:trend|decline|slide|climb|rise|growth|downturn|run)\b",
+    r"\b(?:year|quarter)[- ]to[- ]date\b|\bYTD\b",
+]
+TREND_RE = re.compile("|".join(TREND_PATTERNS), flags=re.I)
 UP = r"\b(increased|rose|grew|climbed|jumped|gained|higher|up)\b"
 DOWN = r"\b(decreased|fell|declined|dropped|slipped|lower|down)\b"
 
@@ -169,5 +188,10 @@ def check(md: str, kpis: dict) -> Result:
     for name in calendar.month_name[1:]:
         if name not in ok_months and re.search(rf"\b{name}\b", md):
             r.issues.append(("wrong_period", f"mentions {name}"))
+
+    # 5. trend
+    for m in TREND_RE.finditer(body):
+        ctx = body[max(0, m.start() - 40): m.end() + 20].replace("\n", " ")
+        r.issues.append(("unsupported_trend", f"{m.group(0)!r} in '...{ctx}...'"))
 
     return r

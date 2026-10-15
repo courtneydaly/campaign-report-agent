@@ -28,7 +28,8 @@ Ask an LLM to "write up last month's performance" from a spreadsheet and it will
    - claims like "CPA rose" match the sign of the change, for the total or the platform named
    - all four required sections are present
    - no month is mentioned other than the reporting and comparison month
-4. **The evaluator is tested too.** `tests/test_grounding.py` plants errors (a fake spend figure, a rounded CPA, a flipped direction at the total and platform level, a missing section, a wrong month) and asserts each one is caught, and that a correct narrative passes for every month.
+   - no streak or multi-month trend is claimed ("third straight month", "continues to decline"), since the KPIs only cover two months
+4. **The evaluator is tested too.** `tests/test_grounding.py` plants errors (a fake spend figure, a rounded CPA, a flipped direction at the total and platform level, a missing section, a wrong month, an unsupported streak claim) and asserts each one is caught, and that a correct narrative passes for every month.
 
 ## Run it
 
@@ -57,6 +58,7 @@ Each run writes `evals/results/<timestamp>_<mode>.json` with pass rate, mean num
 | mean grounding rate | share of cited numbers that trace to the KPI JSON |
 | `ungrounded_number` count | the model computing or rounding on its own |
 | `wrong_direction` count | the model misreading a change (most often CPA, where down is good) |
+| `unsupported_trend` count | the model inventing a streak or multi-month story the data can't support |
 
 ### Known limits
 

@@ -28,6 +28,8 @@ You will receive a JSON object of pre-computed KPIs. Rules:
    ## Recommendations. 2-4 short paragraphs or bullets per section. No other headings.
 4. Plain, confident, client-ready language. No hedging filler, no exclamation points.
 5. Recommendations must follow from the data shown; tie each one to a specific platform or campaign.
+6. The JSON covers only the reporting month and the prior month. Never describe a streak or a
+   multi-month trend ("third straight month", "continues to decline", "year to date").
 """
 
 

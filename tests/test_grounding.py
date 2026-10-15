@@ -63,3 +63,25 @@ def test_offline_baseline_passes_every_month(month):
     k = K.compute(K.load_rows("data/sample_campaigns.csv"), month)
     res = check(narrate_offline(k), k)
     assert res.passed, res.summary()
+
+
+@pytest.mark.parametrize("sentence", [
+    "This is the third straight month of decline.",
+    "Conversions have now fallen for three consecutive months.",
+    "Meta CPA has risen 3 months in a row.",
+    "Spend has grown over the last four months.",
+    "Search CPA continues to climb.",
+    "Microsoft Ads continued its steady decline.",
+    "Year-to-date revenue is ahead of plan.",
+])
+def test_catches_unsupported_trend(sentence):
+    assert "unsupported_trend" in kinds(GOOD + "\n\n" + sentence)
+
+
+@pytest.mark.parametrize("sentence", [
+    "Conversions changed month over month.",
+    "We will continue to monitor Meta next month.",
+    "Review the second campaign in the list.",
+])
+def test_trend_check_ignores_ordinary_phrasing(sentence):
+    assert "unsupported_trend" not in kinds(GOOD + "\n\n" + sentence)
